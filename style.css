@@ -1,0 +1,416 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fc;
+    color: #172554;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    background: #101b3b;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    background: #6c63ff;
+    padding: 5px 12px;
+    border-radius: 8px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #dbeafe;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #a5b4fc;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(120deg, #101b3b, #263b79, #5145a9);
+    color: white;
+    padding: 85px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 400px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.category,
+.small-heading {
+    color: #818cf8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #a5b4fc;
+}
+
+.hero-content p {
+    color: #dbeafe;
+    margin-bottom: 30px;
+    max-width: 520px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #7c70ff;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #6555e8;
+    transform: translateY(-2px);
+}
+
+.hero-decoration {
+    text-align: center;
+    min-width: 180px;
+}
+
+.screen-icon {
+    width: 145px;
+    height: 120px;
+    border: 5px solid #a5b4fc;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    margin: auto auto 15px;
+    font-size: 65px;
+    color: #a5b4fc;
+}
+
+/* SECTION HEADINGS */
+
+.tutorial-section,
+.steps-section,
+.transcript-section {
+    padding: 65px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.8rem, 3vw, 2.25rem);
+    margin: 10px 0;
+    color: #172554;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+/* VIDEO */
+
+.video-card {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+.video-container {
+    background: #080d1b;
+    width: 100%;
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    max-height: 620px;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+/* CUSTOM CONTROLS */
+
+.video-controls {
+    padding: 22px;
+}
+
+.control-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.control-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.play {
+    background: #16a34a;
+}
+
+.pause {
+    background: #ea8b20;
+}
+
+.restart {
+    background: #6555e8;
+}
+
+.control-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.status-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 12px;
+    background: #f1f5f9;
+    border-radius: 7px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #16a34a;
+}
+
+.status-box p {
+    color: #334155;
+    font-size: 16px;
+}
+
+/* LEARNING STEPS */
+
+.steps-section {
+    background: #edf0ff;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.step-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+.step-card span {
+    color: #6555e8;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.step-card h3 {
+    font-size: 19px;
+    margin: 12px 0;
+}
+
+.step-card p {
+    font-size: 16px;
+    color: #64748b;
+}
+
+/* TRANSCRIPT */
+
+.transcript-card {
+    background: white;
+    max-width: 850px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.transcript-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.transcript-header span {
+    background: #ede9fe;
+    color: #6555e8;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.transcript-content p {
+    margin-bottom: 18px;
+    color: #475569;
+    font-size: 17px;
+}
+
+.transcript-content strong {
+    color: #172554;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #101b3b;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer p {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+.copyright {
+    margin-top: 18px;
+    font-size: 14px !important;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .navbar nav {
+        gap: 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-decoration {
+        margin-top: 15px;
+    }
+
+    .tutorial-section,
+    .steps-section,
+    .transcript-section {
+        padding: 45px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 1.75rem;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .control-buttons {
+        flex-direction: column;
+    }
+
+    .control-btn {
+        width: 100%;
+    }
+
+    .transcript-card {
+        padding: 18px;
+    }
+}

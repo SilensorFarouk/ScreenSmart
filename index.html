@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScreenSmart | Computer Skills Tutorial</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">S</span>
+            <span>ScreenSmart</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tutorial">Tutorial</a>
+            <a href="#transcript">Transcript</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="category">
+                    COMPUTER SKILLS • BEGINNER LEVEL
+                </span>
+
+                <h1>
+                    Learn How to Take and Save a
+                    <span>Screenshot</span>
+                </h1>
+
+                <p>
+                    A simple step-by-step tutorial showing you
+                    how to capture your computer screen and
+                    save screenshots on Windows.
+                </p>
+
+                <a href="#tutorial" class="hero-button">
+                    Watch Tutorial →
+                </a>
+
+            </div>
+
+            <div class="hero-decoration">
+                <div class="screen-icon">▣</div>
+                <p>Learn. Capture. Save.</p>
+            </div>
+
+        </section>
+
+        <!-- Video Section -->
+        <section class="tutorial-section" id="tutorial">
+
+            <div class="section-heading">
+                <span class="small-heading">VIDEO LESSON</span>
+                <h2>Watch the Tutorial</h2>
+                <p>Follow the demonstration below.</p>
+            </div>
+
+            <div class="video-card">
+
+                <div class="video-container">
+
+                    <video
+                        id="tutorialVideo"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        poster="images/poster.png">
+
+                        <source
+                            src="videos/Video Project.mp4"
+                            type="video/mp4">
+
+                        <track
+                            src="captions/captions.vtt"
+                            kind="captions"
+                            srclang="en"
+                            label="English"
+                            default>
+
+                        Your browser does not support HTML video.
+                    </video>
+
+                </div>
+
+                <!-- Custom Video Controls -->
+                <div class="video-controls">
+
+                    <div class="control-buttons">
+
+                        <button id="playBtn" class="control-btn play">
+                            ▶ Play
+                        </button>
+
+                        <button id="pauseBtn" class="control-btn pause">
+                            ❚❚ Pause
+                        </button>
+
+                        <button id="restartBtn" class="control-btn restart">
+                            ↻ Restart
+                        </button>
+
+                    </div>
+
+                    <div class="status-box">
+                        <span class="status-dot"></span>
+                        <p id="status">
+                            Status: Video is ready to play.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Learning Steps -->
+        <section class="steps-section">
+
+            <div class="section-heading">
+                <span class="small-heading">WHAT YOU WILL LEARN</span>
+                <h2>Steps Covered in This Tutorial</h2>
+            </div>
+
+            <div class="steps-grid">
+
+                <div class="step-card">
+                    <span>01</span>
+                    <h3>Open Snipping Tool</h3>
+                    <p>Find and launch Snipping Tool from the Windows Start menu.</p>
+                </div>
+
+                <div class="step-card">
+                    <span>02</span>
+                    <h3>Capture Your Screen</h3>
+                    <p>Select New and choose the area you want to capture.</p>
+                </div>
+
+                <div class="step-card">
+                    <span>03</span>
+                    <h3>Save Your Screenshot</h3>
+                    <p>Choose where to save your screenshot and enter a filename.</p>
+                </div>
+
+                <div class="step-card">
+                    <span>04</span>
+                    <h3>View Your Image</h3>
+                    <p>Open the saved image to confirm that your screenshot is available.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Transcript -->
+        <section class="transcript-section" id="transcript">
+
+            <div class="section-heading">
+                <span class="small-heading">READ ALONG</span>
+                <h2>Video Transcript</h2>
+                <p>Read the instructions covered in the video.</p>
+            </div>
+
+            <div class="transcript-card">
+
+                <div class="transcript-header">
+                    <h3>Full Tutorial Transcript</h3>
+                    <span>English</span>
+                </div>
+
+                <div class="transcript-content">
+
+                    <p>
+                        <strong>Introduction:</strong>
+                        Welcome! In this tutorial, I will show you
+                        how to take and save a screenshot on a
+                        Windows computer.
+                    </p>
+
+                    <p>
+                        <strong>Step 1:</strong>
+                        First, click the search {% blocktrans with = trimmed %}{% endblocktrans %} and search
+                        for Snipping Tool. Open the application.
+                    </p>
+
+                    <p>
+                        <strong>Step 2:</strong>
+                        Click the New button to begin taking
+                        a screenshot.
+                    </p>
+
+                    <p>
+                        <strong>Step 3:</strong>
+                        Drag your mouse over the area of the
+                        screen you want to capture.
+                    </p>
+
+                    <p>
+                        <strong>Step 4:</strong>
+                        Click the Save button, choose a location
+                        and enter a file name.
+                    </p>
+
+                    <p>
+                        <strong>Step 5:</strong>
+                        Navigate to the location where you saved
+                        the screenshot and open it.
+                    </p>
+
+                    <p>
+                        <strong>Conclusion:</strong>
+                        Congratulations! You now know how to
+                        take and save a screenshot on Windows.
+                
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-logo">ScreenSmart</div>
+
+            <p>
+                Making computer skills easier to learn.
+            </p>
+
+            <p class="copyright">
+                © 2026 ScreenSmart. Educational Tutorial.
+            </p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
